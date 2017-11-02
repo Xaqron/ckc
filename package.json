@@ -1,6 +1,6 @@
 {
   "name": "ckc",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Civilized Kurento Client",
   "main": "index.js",
   "private": false,
