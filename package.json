@@ -1,0 +1,37 @@
+{
+  "name": "ckc",
+  "version": "0.2.0",
+  "description": "Civilized Kurento Client",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./tests/*.js",
+    "fix-style": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xaqron/ckc.git"
+  },
+  "keywords": [
+    "Kurento",
+    "kurento-client",
+    "media-server",
+    "WebRTC"
+  ],
+  "author": "Xaqron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xaqron/ckc/issues"
+  },
+  "homepage": "https://github.com/Xaqron/ckc#readme",
+  "devDependencies": {
+    "standard": "*",
+    "cspell": "*",
+    "chai": "4.1.2",
+    "jsdoc": "3.5.5",
+    "mocha": "4.0.1"
+  },
+  "dependencies": {
+    "kurento-client": "^6.6.0"
+  }
+}
