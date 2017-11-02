@@ -205,6 +205,11 @@ describe('CKC', function () {
       await webRtcEndpoint.gatherCandidates()
       expect(sdpAnswer.length).to.greaterThan(1000)
       expect(sdpAnswer.split(/\r\n|\r|\n/).length).to.greaterThan(40)
+      // connect
+      let webRtcEndpoint2 = await WebRtcEndpoint.build(mediaPipeLine)
+      assert.ok(webRtcEndpoint2, 'WebRtc Endpoint')
+      expect((webRtcEndpoint2.inner.id).length).to.equal(118)
+      await webRtcEndpoint.connect(webRtcEndpoint2)
       webRtcEndpoint.dispose()
       resolve()
     })
