@@ -21,6 +21,7 @@ describe('CKC', function () {
       let webRtcEndpoint = await WebRtcEndpoint.build(mediaPipeLine)
       await playerEndpoint.connect(webRtcEndpoint)
       await playerEndpoint.play()
+      await playerEndpoint.stop()
       webRtcEndpoint.dispose()
       playerEndpoint.dispose()
       resolve()

@@ -20,7 +20,7 @@ async function test (kurentoServerUrl) {
   // Add client ice candidates in a loop
   webRtcEndpoint.addIceCandidate(iceCandidate)
   // here you can get generated ice candidates
-  webRtcEndpoint.onIceCandidate(async function (iceCandidate) {
+  webRtcEndpoint.onIceCandidate(async (iceCandidate) => {
     console.log(`Received ice candidate: ${iceCandidate}`)
     // send generated ice candidates to client
   })
@@ -31,3 +31,13 @@ async function test (kurentoServerUrl) {
 
 test('ws://localhost:8888/kurento')
 ```
+
+## Changelog ##
+
+**0.5.1**
+
+* `PlayerEndpoint.stop()` method added.
+
+* `PlayerEndpoint.isPlaying` property added (`boolean`).
+
+* `Play` method now gets a `callback` to call at the end of video.

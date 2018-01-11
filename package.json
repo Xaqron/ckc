@@ -1,6 +1,6 @@
 {
   "name": "ckc",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Civilized Kurento Client",
   "main": "index.js",
   "private": false,
@@ -29,7 +29,7 @@
     "cspell": "*",
     "chai": "4.1.2",
     "jsdoc": "3.5.5",
-    "mocha": "4.0.1"
+    "mocha": "4.1.0"
   },
   "dependencies": {
     "kurento-client": "^6.6.0"
