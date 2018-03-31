@@ -29,7 +29,7 @@
     "cspell": "*",
     "chai": "4.1.2",
     "jsdoc": "3.5.5",
-    "mocha": "4.1.0"
+    "mocha": "5.0.5"
   },
   "dependencies": {
     "kurento-client": "^6.6.0"
